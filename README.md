@@ -4,9 +4,9 @@ Welcome to my **React Native Projects** repository! 🚀 This is where I documen
 
 ## 🛠 Tech Stack  
 - **React Native** ⚛️  
-- **Expo / React Native CLI**  
-- **JavaScript / TypeScript**  
-- **Redux / Context API**  
+- **React Native CLI**  
+- **JavaScript /**  
+- **Context API**  
 - **Firebase / API Integration**  
 
 ## 📂 Projects Included  
