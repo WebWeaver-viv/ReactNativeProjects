@@ -20,6 +20,25 @@ const HomeDashboard = ({ navigation }) => {
     </SafeAreaView>
   );
 };
+const HomeDashboard = ({ navigation }) => {
+  return (
+    <SafeAreaView style={styles.container}>
+      <Text style={styles.title}>Welcome to Clear Exam</Text>
+      <TouchableOpacity style={styles.button} onPress={() => alert('Login')}>
+        <Text style={styles.buttonText}>Login</Text>
+      </TouchableOpacity>
+      <TouchableOpacity style={styles.button} onPress={() => alert('Signup')}>
+        <Text style={styles.buttonText}>Signup</Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        style={styles.hamburger}
+        onPress={() => navigation.openDrawer()}
+      >
+        <Text style={styles.hamburgerText}>☰</Text>
+      </TouchableOpacity>
+    </SafeAreaView>
+  );
+};
 
 export default HomeDashboard;
 
