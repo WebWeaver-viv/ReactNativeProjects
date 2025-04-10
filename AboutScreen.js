@@ -1,63 +1,72 @@
 import React from 'react';
-import { View, Text, StyleSheet, Image, ScrollView } from 'react-native';
+import { View, Text, Image, StyleSheet, ScrollView, Linking, TouchableOpacity } from 'react-native';
 
 const AboutScreen = () => {
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <Image
-        source={require('../assets/logo.png')} // Replace with your logo
+        source={require('../assets/logo.png')} // replace with your logo path
         style={styles.logo}
       />
-      <Text style={styles.heading}>About Us</Text>
-      <Text style={styles.text}>
-        Welcome to our app! We're dedicated to providing the best experience for our users.
-        This app is designed to help you [describe your app purpose here briefly].
+      <Text style={styles.appName}>MyApp</Text>
+      <Text style={styles.version}>Version 1.0.0</Text>
+
+      <Text style={styles.heading}>About This App</Text>
+      <Text style={styles.description}>
+        MyApp is designed to help users manage their daily tasks efficiently with simple and intuitive tools. Whether you're tracking goals, notes, or reminders, MyApp has got you covered.
       </Text>
-      <Text style={styles.subHeading}>Our Mission</Text>
-      <Text style={styles.text}>
-        Our mission is to deliver high-quality services with a focus on user satisfaction,
-        reliability, and innovation.
-      </Text>
-      <Text style={styles.subHeading}>Contact Us</Text>
-      <Text style={styles.text}>
-        Email: support@example.com{'\n'}
-        Phone: +91-1234567890
-      </Text>
+
+      <Text style={styles.heading}>Developer</Text>
+      <Text style={styles.description}>Jitendra Gupta</Text>
+
+      <TouchableOpacity onPress={() => Linking.openURL('mailto:your-email@example.com')}>
+        <Text style={styles.link}>Contact: your-email@example.com</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity onPress={() => Linking.openURL('https://github.com/yourusername')}>
+        <Text style={styles.link}>GitHub</Text>
+      </TouchableOpacity>
     </ScrollView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    padding: 20,
     alignItems: 'center',
+    padding: 20,
     backgroundColor: '#fff',
   },
   logo: {
-    width: 120,
-    height: 120,
-    resizeMode: 'contain',
+    width: 100,
+    height: 100,
+    borderRadius: 20,
+    marginBottom: 20,
+  },
+  appName: {
+    fontSize: 24,
+    fontWeight: 'bold',
+  },
+  version: {
+    fontSize: 14,
+    color: '#666',
     marginBottom: 20,
   },
   heading: {
-    fontSize: 28,
-    fontWeight: 'bold',
-    marginBottom: 15,
-    textAlign: 'center',
-    color: '#333',
-  },
-  subHeading: {
-    fontSize: 20,
+    fontSize: 18,
     fontWeight: '600',
     marginTop: 20,
-    marginBottom: 10,
-    color: '#555',
+    marginBottom: 5,
   },
-  text: {
+  description: {
     fontSize: 16,
-    lineHeight: 24,
     textAlign: 'center',
-    color: '#666',
+    paddingHorizontal: 10,
+    color: '#444',
+  },
+  link: {
+    marginTop: 10,
+    color: '#1e90ff',
+    fontSize: 16,
   },
 });
 
