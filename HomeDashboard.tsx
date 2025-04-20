@@ -1,3 +1,4 @@
+/hi i'm coder
 import React, { useState, useEffect } from 'react';
 import {
   View,
