@@ -1,3 +1,5 @@
+//use for mobile aap 
+
 // this is mobile app
 
 
