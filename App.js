@@ -8,7 +8,8 @@ const Drawer = createDrawerNavigator();
 
 export default function App() {
   return (
-    <NavigationContainer>
+   //this is 
+     <NavigationContainer>
       <Drawer.Navigator initialRouteName="Home">
         <Drawer.Screen name="Home" component={HomeDashboard} />
         <Drawer.Screen name="Profile" component={AppPro} />
