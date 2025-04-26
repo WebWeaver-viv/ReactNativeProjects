@@ -1,3 +1,4 @@
+// this about screen page 
 import React from 'react';
 import { View, Text, Image, StyleSheet, ScrollView, Linking, TouchableOpacity } from 'react-native';
 
