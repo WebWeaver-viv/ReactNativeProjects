@@ -17,7 +17,8 @@ const AboutScreen = () => {
         MyApp is designed to help users manage their daily tasks efficiently with simple and intuitive tools. Whether you're tracking goals, notes, or reminders, MyApp has got you covered.
       </Text>
 
-      <Text style={styles.heading}>Developer</Text>
+     // <Text style={styles.heading}>Developer</Text>
+         <Text style={styles.heading}>Developer</Text>
       <Text style={styles.description}>Jitendra Gupta</Text>
 
       <TouchableOpacity onPress={() => Linking.openURL('mailto:your-email@example.com')}>
