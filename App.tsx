@@ -1,5 +1,16 @@
 //use for mobile aap 
 
+//import React, { JSX } from 'react';
+//import {
+  //  Text,
+  //  View,
+  //  StyleSheet,
+  //  useColorScheme,
+  //  Image,
+  //  ScrollView,
+  //  TouchableOpacity,
+ //   SafeAreaView 
+//} from 'react-native';
 import React, { JSX } from 'react';
 import {
     Text,
@@ -11,6 +22,7 @@ import {
     TouchableOpacity,
     SafeAreaView 
 } from 'react-native';
+
 
 // Mock Data (Replace with API calls or local storage)
 const mockProfile = {
