@@ -7,47 +7,7 @@ function App() {
       <ScrollView>
         <Text style={Styles.header}>WleCome To My App</Text>
         <View style={Styles.box}>
-          <Text>Item 1</Text>
-        </View>
-        <View style={Styles.box}>
-          <Text>Item 2</Text>
-        </View>
-        <View style={Styles.box}>
-          <Text>Item 3</Text>
-        </View>
-        <View style={Styles.box}>
-          <Text>Item 4</Text>
-        </View>
-        <View style={Styles.box}>
-          <Text>Item 5</Text>
-        </View>
-        <View style={Styles.box}>
-          <Text>Item 6</Text>
-        </View>
-        <View style={Styles.box}>
-          <Text>Item 6</Text>
-        </View>
-        <View style={Styles.box}>
-          <Text>Item 6</Text>
-        </View>
-        <View style={Styles.box}>
-          <Text>Item 6</Text>
-        </View>
-        <View style={Styles.box}>
-          <Text>Item 6</Text>
-        </View>
-        <View style={Styles.box}>
-          <Text>Item 6</Text>
-        </View>
-        <View style={Styles.box}>
-          <Text>Item 6</Text>
-        </View>
-
-        <View style={Styles.box}>
-          <Text>Item 6</Text>
-        </View>
-        <View style={Styles.box}>
-          <Text>Item 6</Text>
+          <Text style={Styles.txt}>Hello World</Text>
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -56,17 +16,27 @@ function App() {
 const Styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginTop: 30,
+    marginTop: 0,
+    backgroundColor: 'white',
   },
   header: {
     fontSize: 24,
     fontWeight: 'bold',
-    margin: 40,
+    marginBottom: 20,
+    marginTop: 50,
+    marginLeft: 90,
   },
   box: {
     padding: 20,
-    margin: 10,
-    backgroundColor: '#e0e0e0',
+    margin: 5,
+  },
+  txt: {
+    paddingLeft: 20,
+    color: 'black',
+    fontSize: 24,
+    fontWeight: '600',
+    marginBottom: 20,
+    marginLeft: 90,
   },
 });
 export default App;
