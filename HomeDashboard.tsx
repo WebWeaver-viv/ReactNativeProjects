@@ -270,16 +270,16 @@ const styles = StyleSheet.create({
     fontSize: 32,
     color: '#007AFF',
   },
+   notificationTitle: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    marginBottom: 5,
+  },
   notificationContainer: {
     marginTop: 20,
     padding: 15,
     backgroundColor: '#e0e0e0',
     borderRadius: 8,
-  },
-  notificationTitle: {
-    fontSize: 16,
-    fontWeight: 'bold',
-    marginBottom: 5,
   },
   testNotificationButton: {
     backgroundColor: '#4CAF50',  // Green color
