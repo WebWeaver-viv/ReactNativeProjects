@@ -1,5 +1,4 @@
-//import React from 'react';
-//import {Text, View, SafeAreaView, StyleSheet, ScrollView} from 'react-native';
+
 import React from 'react';
 import {Text, View, SafeAreaView, StyleSheet, ScrollView} from 'react-native';
 
