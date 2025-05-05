@@ -1,16 +1,4 @@
-//use for mobile aap 
 
-//import React, { JSX } from 'react';
-//import {
-  //  Text,
-  //  View,
-  //  StyleSheet,
-  //  useColorScheme,
-  //  Image,
-  //  ScrollView,
-  //  TouchableOpacity,
- //   SafeAreaView 
-//} from 'react-native';
 import React, { JSX } from 'react';
 import {
     Text,
