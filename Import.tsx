@@ -1,4 +1,4 @@
-
+//code of the 
 import React from 'react';
 import {Text, View, SafeAreaView, StyleSheet, ScrollView} from 'react-native';
 
